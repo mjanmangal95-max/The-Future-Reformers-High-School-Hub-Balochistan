@@ -1,0 +1,284 @@
+.nav{
+    display: flex;
+    background-color:darkblue;
+    align-items: center;
+     justify-content: space-around;
+     padding: 20px;
+     border-radius: 20px;
+     
+
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 253);
+    color: rgb(0, 0, 0);
+    
+    
+}
+a{
+   
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+   
+}
+a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(138, 194, 231,0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo img{
+    width: 100%;
+    max-width: 50px;
+     height: 50px;
+}
+.header{
+    background-image: url(/The-Future-Reformers-R-School-Hub-main/image/copypic\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: inline-block;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3); /* transparent black */
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+h1{
+     display: flex;
+     font-size: 80px;
+     color: rgb(255, 255, 255);
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+#jan{
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+.main{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.para{
+    margin: 25px;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 3rem;
+    
+
+
+}
+.pic img{
+   display: block;
+   width: 100%;
+   max-width: 1000px;
+   height: auto;
+   margin: auto;
+   border-radius: 10px;
+   border: 3px solid black;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+#img{
+    height: 800px;
+    object-fit: cover;
+}
+#Address{
+    text-align: center;
+    margin: 50px;
+    justify-content: center;
+    font-size: 30px;
+}
+.text{
+    font-size: 25px;
+}
+.Box{
+    
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+   background-color: rgb(255, 255, 255);
+   border: 2px solid #333;
+   padding: 20px;
+   margin: 50px auto;
+   text-align: center;
+   border-radius: 15px;
+   color: black;
+   
+
+}
+.boxes{
+    width: 1000px;
+    display: flex;
+    background-color:darkblue;
+    border: 3PX solid black;
+    margin: auto;
+    border-radius: 20px;
+    height: 750px;
+    margin: 50px auto;
+
+}
+.cont{
+   
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     margin: 70px;
+     justify-content: space-around;
+}
+.images{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+.footer{
+   padding: 25px;
+    width: 96%;
+    max-width: 100%;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+ .social-icons a {
+    font-size: 30px;
+    margin: 10px;
+    color: #000000;
+    text-decoration: none;
+    
+  }
+
+  .social-icons a:hover {
+    padding: 3px;
+    background-color: rgb(103, 103, 221,0.3);
+    
+  }
+  /* ===== Hamburger ===== */
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media(max-width:768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: darkblue;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav-links a{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
+  @media(max-width:600px){
+    a{
+        font-size: 15px;
+    }
+    .pic img{
+        max-width: 300px;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 1.5rem;
+
+    }
+    .main{
+        margin: 5px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Box{
+        max-width: 300px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .images{
+        max-width: 300px;
+    }
+    .boxes{
+        max-width: 400px;
+        height: 300px;
+    }
+    #img{
+        height: 270px;
+    }
+    #Address{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .footer{
+        font-size: 15px;
+    }
+  }
+
+  
